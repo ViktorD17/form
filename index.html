@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper-main">
+
+		<div class="steps">
+			<div class="wrapper">
+				<ul class="steps__items">
+					<li class="steps__item active">01 Customer info</li>
+					<li class="steps__item">02 Shipping info</li>
+					<li class="steps__item">03 Payment selection</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="form">
+			<div class="wrapper">
+				<form action="">
+
+					<div class="customer">
+						<div class="customer__wrapper">
+							<h2 class="form__title">Customer information</h2>
+
+							<label for="">First name<input type="text" class="first-name" required oninput="this.value=this.value.replace(/[^a-zA-Zа-яА-яі]/g,'');"></label>
+							<label for="">Last name<input type="text"></label>
+							<label for="" class="address">Address<input type="text"></label>
+							<label for="" class="form__select">Contry
+								<select name="" id="">
+									<option value="">Ukraine</option>
+									<option value="">Poland</option>
+								</select>
+							</label>
+							<label for="">City<input type="text"></label>
+							<label for="" class="post">Postal code<input type="text"><button>Find</button></label>
+							<label for="">Phone<input type="text" class="phone-field" data-phone-pattern></label>
+
+							<div class="form__buttons">
+								<button class="form__btn disabled">Continue to shipping</button>
+								<a href="" class="form__back-btn form__link">Return to shop</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="shipping">
+						<h2 class="form__title">Shipping information</h2>
+
+						<div class="shipping__address shipping-address">
+							<div class="shipping-address__information">
+								<p>
+									Taras Shevchenko <br>
+									Unit 2 Green Mount Park <br>
+									Halifax <br>
+									HX1 5QN <br>
+									Phone: +3 8097 132-45-67
+								</p>
+								<div class="shipping-address__buttons">
+									<button>Edit Address</button>
+									<button>Add New</button>
+								</div>
+							</div>
+
+							<div class="shipping-address__map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.641449914048!2d30.514249121228072!3d50.44779061181891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce59e3ab65a7%3A0x694b8565cab02eaf!2sGolden%20Gate!5e0!3m2!1sen!2sua!4v1643814663146!5m2!1sen!2sua"
+									style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</div>
+
+						<div class="shipping-method">
+							<h2 class="form__title">Shipping information</h2>
+
+							<div class="shipping-method__item active">
+								<fieldset>
+									<input type="radio" name="shipping-method" id="shipping-first" checked>
+									<label for="shipping-first">Standart Delivery</label>
+									<span>FREE</span>
+									<p>Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your
+										project.</p>
+								</fieldset>
+							</div>
+
+							<div class="shipping-method__item">
+								<fieldset>
+									<input type="radio" name="shipping-method" id="shipping-second">
+									<label for="shipping-second">Fast Delivery</label>
+									<span>$10</span>
+									<p>Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your
+										project.</p>
+								</fieldset>
+							</div>
+						</div>
+
+						<div class="form__buttons">
+							<button class="form__btn">Continue to Payment</button>
+							<a href="" class="form__back-btn form__step2">Back to Customer Info</a>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
